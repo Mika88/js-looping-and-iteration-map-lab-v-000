@@ -13,10 +13,8 @@ function nameToAttributes(array) {
  return objects
 }
 
-function attributesToPhrase(array) {
-  const list =  array.map(function(object) {
-    const phrase = `${object.name} is from ${object.hometown}`
-    return phrase
+function attributesToPhrase(driver) {
+  return drivers.map(function(driver) {
+    return `${driver.name} is from ${driver.hometown}`;
   });
-  return list
 }
