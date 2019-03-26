@@ -13,7 +13,7 @@ function nameToAttributes(array) {
  return objects
 }
 
-function attributesToPhrase(driver) {
+function attributesToPhrase(drivers) {
   return drivers.map(function(driver) {
     return `${driver.name} is from ${driver.hometown}`;
   });
